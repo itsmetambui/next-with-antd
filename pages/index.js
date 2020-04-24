@@ -12,7 +12,7 @@ const FormItem = Form.Item
 const Option = Select.Option
 
 export default () => (
-  <div style={{ marginTop: 100 }}>
+  <div className="mt-10">
     <Form layout="horizontal">
       <FormItem
         label="Input Number"
