@@ -15,8 +15,9 @@ const content = {
   marginTop: '100px',
 }
 
-export default () => (
+export default ({ data }) => (
   <div style={content}>
+    <h1>{data}</h1>
     <div className="text-center mb-5">
       <Link href="#">
         <a className="logo mr-0">
@@ -98,3 +99,12 @@ export default () => (
     </div>
   </div>
 )
+
+
+export async function getStaticProps() {
+  return {
+    props: {
+      data: 'test'
+    },
+  }
+}
